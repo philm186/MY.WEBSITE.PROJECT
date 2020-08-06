@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>=about me  </title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+     <head>
+
+        <button onclick="document.location='index.html'">HOME</button>
+        <button onclick="document.location='about me.html'">ABOUT ME</button>
+        <button onclick="document.location='contact.html'">CONTACT INFO</button>
+        <button onclick="document.location='references.html'">REFERENCES</button>
+
+     <body>
+         <br>
+         <br>
+
+        <p> my name is philip matthews and i am 33 years old and one of my favortie 
+            things to do is watch films and tv series, at the minute i am a big marvel 
+           i enjoy to work with my hands and do a bit of DIY when i can, i recently made my 
+           own coffee table with some scap wood my friend had spare. I enjoy to visit my family  
+           and have a darts from time to time  and playing video games with friends but not as
+            much as i use to nowadays. <br>
+            <br>
+            In the past i have worked in a bank on the cashier which i found easy to do all the 
+            transactions but didnt like the part where you bug customers in buying cedrtain products(sales side of it)
+            it just seem like they want there monthly points hit rather than helping the customers, and it was the elderly that 
+            ended up getting things they didnt need really. <br>
+            I also used to be a laminate floor fitting which i really enjoyed doing because i got to work with friends and i was good at it
+            even had contracts at times to work on site and fit floors for loads of brand new flats in manchester
+        
+        </p>
+
+        <br> 
+        <br>
+
+        <style>
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            </style>
+
+<a style="text-align:right"  href="https://www.wired.co.uk/article/best-marvel-movies-ranked"target=_blank>
+        <img src="marvel.jpg" alt ="marvel" style="width:50%;">
+        <br>
+        <br>
+        <br>
+        
+        <img src="funny.gif" /> 
+
+
+        <div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+          
+      },
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: ''
+                  }
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+  }).render('#paypal-button-container');
+</script>
+
+<a> <h4>ANY DONATIONS TO HELP ME <br> 
+    TO BECOME A GREAT WEB DESIGHNER <br>
+     WOULD BE MUCH APPRECIATED </h4></a>
+
+</body>
